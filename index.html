@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Convert PNG images to JPG format easily with our online PNG to JPG Converter. Quick and user-friendly tool for personal use. Privacy and security guaranteed.">
+    <meta name="keywords" content="PNG to JPG, how to convert a png to jpg, convert PNG to JPG, change png to jpg, image format converter, PNG, JPG, JPEG, how to convert png to jpg on mac">
+    <meta name="author" content="SACHIN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG to JPG Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>PNG to JPG Converter</h1>
+    <section class="main-content">
+        <h2>Empower Your Business for Free: Discover the Limitless Possibilities at Convertorama</h2>
+        <p>Welcome to Convertorama - the ultimate platform that empowers businesses of all sizes to thrive without any cost! We believe that every entrepreneur deserves access to the best tools and resources to succeed in today's competitive market. In this blog, we'll take you on a journey to explore the unparalleled benefits of using our website for free and how it can transform your business in ways you never imagined.</p>
+
+    <input type="file" id="imageInput" accept="image/png">
+    <button onclick="convertToJpg()">Convert to JPG</button>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <a id="downloadLink" style="display: none;">Download JPG</a>
+    <p>Join us today and unlock the potential of your business without spending a dime! Together, let's take your venture to soaring heights and achieve unparalleled success. Sign up for free at [Your Website Name] now and embark on your journey to greatness!</p>
+</section>
+<div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="question">
+        <h3>1. How does this converter work?</h3>
+        <p>This converter uses the HTML5 canvas element to convert PNG images to JPG format directly in the user's browser. No server-side processing is involved, ensuring your image data remains secure.</p>
+    </div>
+    <div class="question">
+        <h3>2. Can I convert other image formats to JPG?</h3>
+        <p>No, this converter is specifically designed to handle PNG to JPG conversion. For other formats, you may need to use different tools or software.</p>
+    </div>
+    <div class="question">
+        <h3>3. Is there a limit on image size?</h3>
+        <p>Since the conversion is done on the client-side, very large images may consume a significant amount of memory and cause performance issues in the browser. It is recommended to use images of moderate size for smooth conversion.</p>
+    </div>
+    <div class="question">
+        <h3>4. Does this converter work on all browsers?</h3>
+        <p>Yes, the converter is built using standard HTML5 canvas APIs, and it should work on most modern browsers, including Chrome, Firefox, Safari, and Edge.</p>
+    </div>
+    <div class="question">
+        <h3>5. Can I convert multiple images at once?</h3>
+        <p>No, this converter currently supports one image conversion at a time. You can convert multiple images sequentially, but not in a batch process.</p>
+    </div>
+    <div class="question">
+        <h3>6. Will my image be stored or uploaded anywhere?</h3>
+        <p>No, the conversion process is entirely client-side, and your image data will not be uploaded or stored on any server. The converted image will be available only for you to download.</p>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <h2>About</h2>
+            <p>Welcome to PNG to JPG Converter! We are dedicated to providing a simple and efficient solution for converting your PNG images to JPG format. Our online tool allows you to seamlessly transform your images with just a few clicks, without the need for any complex software installations.</p>
+        <h3>Our Mission</h3>
+        <p>Our mission is to empower users to easily convert PNG images to JPG, making it convenient to use and share their images across various platforms. Whether you are a photographer, blogger, social media enthusiast, or anyone needing to convert PNG files, we've got you covered.</p>
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li><strong>Ease of Use:</strong> Our converter is designed with a user-friendly interface, making the conversion process quick and hassle-free.</li>
+            <li><strong>Privacy and Security:</strong> Your privacy is important to us. We ensure that all image processing takes place directly in your browser, with no data storage or upload to external servers.</li>
+            <li><strong>Fast and Efficient:</strong> Experience rapid conversion times, even with large image files, thanks to our optimized conversion algorithms.</li>
+            <li><strong>Free of Charge:</strong> PNG to JPG Converter is entirely free to use. We believe in providing a valuable service without any cost to our users.</li>
+        </ul>
+        <h3>Get Started</h3>
+        <p>To begin converting your PNG images to JPG, simply upload your file using the provided input field and click the "Convert to JPG" button. After the conversion is complete, you can download the JPG file and start using it wherever you desire.</p>
+        <p>Thank you for choosing PNG to JPG Converter. We hope our tool enhances your image conversion experience. If you have any questions or feedback, feel free to reach out to our team. Happy converting!</p>
+        </div>
+        <div class="footer-section">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is essential to us. This Privacy Policy outlines how PNG to JPG Converter collects, uses, and protects the information you provide when using our website.</p>
+
+            <h3>Information We Collect</h3>
+            <p>When you use PNG to JPG Converter, we may collect the following types of information:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> We may collect your name, email address, or other personally identifiable information when you voluntarily provide it to us.</li>
+                <li><strong>Usage Data:</strong> We may collect non-personal information, such as your IP address, browser type, operating system, and other analytical data when you use our website.</li>
+                <li><strong>Cookies:</strong> We use cookies and similar technologies to enhance your browsing experience and track usage patterns on our site. You can manage your cookie preferences through your browser settings.</li>
+            </ul>
+    
+            <h3>How We Use Your Information</h3>
+            <p>We use the information we collect for various purposes, including:</p>
+            <ul>
+                <li>Providing and improving our services</li>
+                <li>Responding to your inquiries or requests</li>
+                <li>Personalizing your experience on our website</li>
+                <li>Understanding and analyzing user trends and preferences</li>
+                <li>Ensuring the security and integrity of our website</li>
+            </ul>
+    
+            <h3>Data Security</h3>
+            <p>We take reasonable measures to protect your information from unauthorized access, disclosure, or alteration. However, no method of data transmission over the internet or electronic storage is entirely secure. We cannot guarantee the absolute security of your information.</p>
+    
+            <h3>Third-Party Services</h3>
+            <p>Our website may contain links to third-party websites or services. We are not responsible for the privacy practices or content of these external sites. We encourage you to review their respective Privacy Policies before providing any personal information.</p>
+    
+            <h3>Changes to this Privacy Policy</h3>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. The latest version will always be posted on this page, and the revised date will be indicated at the top of the page.</p>
+    
+            <p>If you have any questions or concerns about this Privacy Policy, please contact us at privacy@pngtojpgconverter.com.</p>
+        </div>
+        </div>
+        <div class="footer-section">
+            <h2>Terms of Service</h2>
+            <div class="content">
+                
+                <p>By accessing and using PNG to JPG Converter, you agree to be bound by the following terms and conditions. Please read these terms carefully before using our website.</p>
+        
+                <h3>Use of the Service</h3>
+                <p>Our service allows you to convert PNG images to JPG format. You may use this service for personal and non-commercial purposes. You must not use this service for any illegal or unauthorized purposes.</p>
+        
+                <h3>Intellectual Property</h3>
+                <p>All content and materials on PNG to JPG Converter, including the website design, logo, and any software, are the property of our company and protected by applicable copyright and intellectual property laws.</p>
+        
+                <h3>Disclaimer of Warranty</h3>
+                <p>While we strive to provide accurate and reliable services, PNG to JPG Converter is provided on an "as is" and "as available" basis. We do not warrant that our service will be uninterrupted, error-free, or secure. We are not liable for any damages or losses resulting from the use of our service.</p>
+        
+                <h3>Limitation of Liability</h3>
+                <p>In no event shall PNG to JPG Converter or its affiliates be liable for any indirect, consequential, incidental, special, or punitive damages arising out of or in connection with the use or inability to use our service.</p>
+        
+                <h3>Indemnification</h3>
+                <p>You agree to indemnify and hold PNG to JPG Converter, its officers, directors, employees, and agents harmless from any claims, demands, or damages, including reasonable attorney's fees, arising from your use of the service or violation of these terms.</p>
+        
+                <h3>Modification of Terms</h3>
+                <p>We reserve the right to modify these terms at any time. The latest version of the terms will be posted on this page, and the revised date will be indicated at the top of the page.</p>
+        
+                <p>If you have any questions or concerns about our Terms of Service, please contact us at support@pngtojpgconverter.com.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Convertorama. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
